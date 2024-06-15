@@ -1,74 +1,72 @@
-import { ReactNode } from 'react';
-import {
-  Box,
-  Flex,
-  Avatar,
-  HStack,
-  Link,
-  IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
-  useDisclosure,
-  useColorModeValue,
-  Stack,
-} from '@chakra-ui/react';
+import { Box,Text, Flex, HStack, IconButton, Menu, MenuButton, MenuList, MenuItem, MenuDivider, useDisclosure, Stack, Switch } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import {NavLink} from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
+import { useContext } from 'react';
+import { ThemeContext } from '../ContextApi/ThemeContext';
+import { ParticleContext } from '../ContextApi/ParticleContext';
 
 const Links = [
-    {title:"Home",path:"/"},
-    {title:"Arti",path:"/arti"},
+  { title: "DASHBOARD", path: "/" },
+  { title: "ARTI", path: "/arti" }
 ];
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { changeTheme } = useContext(ThemeContext)
+  const { handleAmoungUs,handleSpider,handleColors,handleStarry,handleNone } = useContext(ParticleContext)
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} position={'fixed'} w={'100%'} zIndex={2}>
+      <Box px={4}  >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
+            colorScheme={""}
             size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon/>}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box>Logo</Box>
+            <Box><Link to={'/'}><img src={'./om.png'} alt="Om" style={{width:"60px"}} /></Link></Box>
             <HStack
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((elm,i) => (
-                <NavLink key={i} to={elm.path}>{elm.title}</NavLink>
+              {Links.map((elm, i) => (
+                <NavLink key={i} to={elm.path} style={({isActive})=>{
+                  return isActive ? {textDecoration:"underline", textUnderlineOffset:"7px"} :{}
+                }}><Text fontSize='md' as={'b'} >{elm.title}</Text></NavLink>
               ))}
             </HStack>
+
+
           </HStack>
           <Flex alignItems={'center'}>
+
+            <Stack align='center' direction='row' >
+              <Switch size='lg' onChange={changeTheme} colorScheme={'gray'} />
+            </Stack>
+            <div style={{ width: "20px" }}></div>
             <Menu>
-              <MenuButton
-                as={Button}
-                rounded={'full'}
-                variant={'link'}
-                cursor={'pointer'}
-                minW={0}>
-                <Avatar
-                  size={'sm'}
-                  src={
-                    'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9'
-                  }
-                />
+              <MenuButton style={{border:"2px solid teal", padding:"5px 20px 5px 20px", borderRadius:"5px", color:"teal"}} >
+                Theme
               </MenuButton>
-              <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
+
+              <MenuList style={{color:"black"}}>
+                <MenuItem onClick={handleAmoungUs}>Among Us</MenuItem>
                 <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
+
+                <MenuItem onClick={handleSpider}>Spider</MenuItem>
+                <MenuDivider />
+
+                <MenuItem onClick={handleColors}>Colors</MenuItem>
+                <MenuDivider />
+
+                <MenuItem onClick={handleStarry}>Starry</MenuItem>
+                <MenuDivider />
+
+                <MenuItem onClick={handleNone}>None</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
@@ -77,8 +75,8 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((elm,i) => (
-                <NavLink key={i} to={elm.path}>{elm.title}</NavLink>
+              {Links.map((elm, i) => (
+                <NavLink key={i} to={elm.path}><Text fontSize='md' as={'b'} >{elm.title}</Text></NavLink>
               ))}
             </Stack>
           </Box>
