@@ -1,12 +1,40 @@
-.homeContainer{
-    /* background-image: url("https://thumbs.dreamstime.com/b/om-sign-lotus-flower-rainbow-watercolor-texture-splash-isolated-spiritual-buddhist-hindu-symbol-80382453.jpg"); */
-    /* background-image: url("https://cdn.statusqueen.com/dpimages/thumbnail/om3-179.jpg");
-    background-repeat: repeat-y;
-    background-size: 50% auto; */
-    /* border: 1px solid black; */
-    width: 90%;
-    margin-left: 5%;
-    background-position: center;
-    padding-top: 80px;
+.homeContainer {
+    width: 100%;
+    min-height: 95vh;
+    display: flex; 
+}
+
+.homeChildOne {
+    width: 30%;
+    height: 95vh;
    
+}
+
+.homeImageContainer {
+    width: 70%;
+    height: 95vh;
+}
+
+.accordionChild:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+@media (max-width: 768px) {
+    .homeContainer {
+        width: 100%;
+        min-height: 95vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homeChildOne {
+        width: 100%;
+        height: auto; 
+    }
+    
+    .homeImageContainer {
+        width: 100%;
+        height: auto; 
+    }
 }

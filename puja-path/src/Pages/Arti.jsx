@@ -1,9 +1,10 @@
 import React from "react";
 import { Box } from '@chakra-ui/react'
+import { ArtiAccordions } from "../Components/ArtiAccordions";
 
 const Arti = ()=> {
-    return <Box pt={'80px'}>
-            Arti page
+    return <Box style={{ padding: "2% 5% 5% 5%", minHeight: "95vh" }}>
+            <ArtiAccordions/>
     </Box>
 }
 
