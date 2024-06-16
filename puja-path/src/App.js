@@ -1,10 +1,10 @@
 import './App.css';
-import AllRoutes from './Components/AllRoutes';
-import Navbar from './Components/Navbar';
+import Navbar from './Routers/Navbar';
 import { ParticlesContainer } from './Components/ParticlesContainer';
 import {useContext} from "react";
 import { ThemeContext } from "./ContextApi/ThemeContext";
-import Footer from './Components/Footer';
+import Footer from './Routers/Footer';
+import AllRoutes from './Routers/AllRoutes';
 
 function App() {
   const {isDark}=useContext(ThemeContext);

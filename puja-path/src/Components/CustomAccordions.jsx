@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/CustomStyles.module.css";
-import { Box, Text, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon,AspectRatio } from '@chakra-ui/react';
+import { Box, Text, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from '@chakra-ui/react';
 
 export const CustomAccordions = () => {
     return <>

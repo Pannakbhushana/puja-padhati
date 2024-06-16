@@ -5,6 +5,7 @@ import Arti from "../Pages/Arti";
 import { GaneshPuja } from "../Devpujan/GaneshPuja";
 import { PujanVidhi } from "../Devpujan/SatnarayanPuja/PujanVidhi";
 import { SatnarayanKatha } from "../Devpujan/SatnarayanPuja/SatnarayanKatha";
+import AboutMe from "../Pages/AboutMe";
 
 const AllRoutes = ()=> {
     return <>
@@ -14,6 +15,7 @@ const AllRoutes = ()=> {
                 <Route path="/ganesh-pujan" element={<GaneshPuja/>} />
                 <Route path="/satnarayan-pujan-vidhi" element={<PujanVidhi/>} />
                 <Route path="/satnarayan-katha" element={<SatnarayanKatha/>} />
+                <Route path="/about-me" element={<AboutMe/>} />
             </Routes>
     </>
 }

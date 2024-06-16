@@ -1,10 +1,18 @@
 .coloredTheme{
   text-align: center;
   background: linear-gradient(to right, #d56b01, #FFFF00);
+  user-select: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
 }
 
 .darkTheme{
   text-align: center;
-  background: linear-gradient(to right, #020202, #f4f4f1);
+  background: linear-gradient(to right, #020202, #444444);
   color: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
 }
