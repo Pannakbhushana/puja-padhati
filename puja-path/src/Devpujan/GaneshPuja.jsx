@@ -1,16 +1,17 @@
 import React from "react";
 import { Box, Text} from '@chakra-ui/react';
-
-// let missing = ["sami patr", "bilvapatra"]
+import SideBar from "../Routers/SideBar";
 
 export const GaneshPuja = () => {
 
-    return <div style={{padding:"0 5% 5% 5%",minHeight:"95vh"}}>
+    return<> 
+    <div style={{minHeight:"95vh"}}>
         <br />
-        <br />
+        <SideBar/>
         <Text fontSize='2xl' as={'b'} >|| गणेश पूजन ||</Text>
-        <br />
-        <br />
+       <br />
+       <br />
+
         <Text fontSize='sm' as={'b'} >- अचमन -</Text><br />
         <Text fontSize='xl' as={'b'} >ॐ केशवाय नमः ॐ नारायणाय नमः ॐ माधवाय नमः</Text><br />
         <Text fontSize='sm' as={'b'} >ॐ हृषीकेशाय नमः ॐ गोविंदाय नमः</Text>
@@ -58,7 +59,7 @@ export const GaneshPuja = () => {
         <br />
         <br />
         <Text fontSize='2xl' as={'b'} >|| स्वस्ति वाचन ||</Text>
-        <Box textAlign={'justify'} mt={'1%'}>
+        <Box textAlign={'justify'} mt={'1%'} p={"0 5% 5% 5%"}>
             <Text fontSize='xl' as={'b'} lineHeight={'35px'} >
                 ॐ आनोभद्रा: क्रतवो यन्तु विस्वतो
                 दब्धासो अपरीतास उद्भिद:।
@@ -148,7 +149,7 @@ export const GaneshPuja = () => {
         <br />
         <br />
         <Text fontSize='2xl' as={'b'} >|| पौराणिकस्लोका: ||</Text>
-        <Box textAlign={'justify'} mt={'1%'}>
+        <Box textAlign={'justify'} mt={'1%'} p={"0 5% 5% 5%"}>
             <Text fontSize='xl' as={'b'} lineHeight={'35px'} >
                 सुमुखश्चैकदन्तश्च
                 कपिलो गजकर्णकः।
@@ -230,7 +231,7 @@ export const GaneshPuja = () => {
         <br />
         <br />
         <Text fontSize='2xl' as={'b'} >|| सङ्कल्प: ||</Text>
-        <Box textAlign={'justify'} mt={'1%'}>
+        <Box textAlign={'justify'} mt={'1%'} p={"0 5% 5% 5%"}>
             <Text fontSize='xl' as={'b'} lineHeight={'35px'} >
                 ॐ विष्णुर्विष्णुर्विष्णुः श्रीमद्भगवतो महापुरुषस्य विष्णोराज्ञया प्रवर्तमानस्य ब्रह्मणोऽह्नि द्वितीयपरार्धे श्रीश्वेतवाराहकल्पे वैवस्वतमन्वन्तरे अष्टाविंशतितमे कलियुगे कलिप्रथमचरणे जम्बूद्वीपे भारतवर्षे आर्यावर्तेकदेशे. .....अमुकक्षेत्रे  ....अमुकमासे ....अमुकपक्षे ....अमुकतिथौ ....अमुकवासरे
                 अद्य शुभपुण्यतिथौ अमुकगोत्र: अमुकनाम शर्माऽहं ममात्मनः सपरिवारस्य धर्मार्थकाममोक्षचतुर्विधपुरुषार्थसिद्ध्यर्थं श्रुतिस्मृतिपुराणोक्तफलप्राप्त्यर्थं मनसेप्सितसकलकामनासंसिद्ध्यर्थं
@@ -468,6 +469,6 @@ export const GaneshPuja = () => {
             भक्तार्तिनाशनपराय गणेश्वराय सर्वेश्वराय शुभदाय सुरेश्वराय । विद्याधराय विकटाय च वामनाय भक्तप्रसन्नवरदाय नमो नमस्ते ॥</Text>
         <br />
        
-
     </div>
+    </>
 }

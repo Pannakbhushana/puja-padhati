@@ -1,12 +1,13 @@
 import React from "react";
 import { Text,Box } from '@chakra-ui/react';
 import { kalashSthapan,devAvahan,prarthana} from "../utils/kalash";
+import SideBar from "../Routers/SideBar";
 
 export const KalashPuja = () => {
 
-    return <div style={{ padding: "0 5% 5% 5%", minHeight: "95vh" }}>
-        <br />
-        <br />
+    return <div style={{ minHeight: "95vh" }}>
+       <br />
+       <SideBar/>
         <Text fontSize='2xl' as={'b'} >||  कलशपूजनम् ||</Text>
         <br />
         <br />
@@ -36,7 +37,7 @@ export const KalashPuja = () => {
 
         <Text fontSize='2xl' as={'b'} > ~ षोडशोपचारैः पूजनम् ~</Text><br /><br/>
 
-        <Box textAlign={'justify'}>
+        <Box textAlign={'justify'} p={"0 5% 5% 5%"}>
             <Text fontSize='xl' as={'b'} >
             आसनार्थेऽक्षतान समर्पयामि । पादयोः पाद्यं समर्पयामि । हस्तयोः अर्घ्यं समर्पयामि । आचमनं समर्पयामि । पञ्चामृतस्नानं समर्पयामि । शुद्धोदकस्नानं समर्पयामि । 
             स्नानाङ्गाचमनं समर्पयामि । वस्त्रम् समर्पयामि । आचमनं समर्पयामि । 

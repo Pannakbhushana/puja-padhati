@@ -1,30 +1,29 @@
-import React from "react";
+import { Accordion, AccordionItem, AccordionPanel, Text, Box } from '@chakra-ui/react'
+import { AccordionComponent } from "./AccordionComponent";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/CustomStyles.module.css";
-import { Box, Text, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from '@chakra-ui/react';
-import { AccordionComponent } from "./AccordionComponent";
 
-export const HomeAccordions = () => {
-    return <>
-        <Accordion >
-                <AccordionComponent path={"//ganesh-pujan"} title={"गणेशपूजनम्"}/>
-                <AccordionComponent path={"/kalash-puja"} title={"कलशपूजनम्"}/>
-           
+function HomeAccordions() {
+    return (
+        <Accordion allowMultiple>
+
+            <AccordionComponent path={"/ganesh-pujan"} title={"गणेशपूजनम्"} />
+            <AccordionComponent path={"/kalash-puja"} title={"कलशपूजनम्"} />
+
             <AccordionItem>
-                <AccordionButton>
-                    <Box as='span' flex='1' textAlign='left'>
-                        <Text fontSize='md' as={'b'} > सत्यनारणपूजनम् </Text>
+                <AccordionComponent title={"सत्यनारणपूजनम्"} />
+                <AccordionPanel pb={4} >
+                    <Box w={'95%'} ml={'5%'} textAlign={'left'}>
+                        <Link to={"/satnarayan-pujan-vidhi"} className={Styles.accordionChild}><Text fontSize='md' as={'b'} > सत्यनारण व्रत पूजन सामग्री एवं विधि </Text></Link> <br /><br />
+                        <Link to={"/satnarayan-katha"} className={Styles.accordionChild}> <Text fontSize='md' as={'b'} >सत्यनारायण व्रत कथा </Text></Link> <br /><br />
+                        <Link to={"/satnarayan-katha"} className={Styles.accordionChild}> <Text fontSize='md' as={'b'} >सत्यनारायण पूजन </Text></Link> <br /><br />
                     </Box>
-                    <AccordionIcon />
-                </AccordionButton>
-
-                <AccordionPanel pb={4}>
-                    <Link to={"/satnarayan-pujan-vidhi"} className={Styles.accordionChild}><Text fontSize='md' as={'b'} > सत्यनारण व्रत पूजन सामग्री एवं विधि </Text></Link> <br /><br />
-                    <Link to={"/satnarayan-katha"} className={Styles.accordionChild}> <Text fontSize='md' as={'b'} >सत्यनारायण व्रत कथा </Text></Link> <br /><br />
-                    <Link to={"/satnarayan-katha"} className={Styles.accordionChild}> <Text fontSize='md' as={'b'} >सत्यनारायण पूजन </Text></Link> <br /><br />
                 </AccordionPanel>
             </AccordionItem>
 
         </Accordion>
-    </>
+
+    )
 }
+
+export { HomeAccordions }

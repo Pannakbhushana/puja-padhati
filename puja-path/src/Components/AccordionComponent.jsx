@@ -5,7 +5,8 @@ import { Box, Text, AccordionItem, AccordionButton, AccordionIcon } from '@chakr
 
 export const AccordionComponent = ({path,title}) => {
 
-    return <>
+    if(path){
+        return <>
         <AccordionItem>
             <Link to={path} className={Styles.accordionChild}>
                     <AccordionButton>
@@ -17,4 +18,15 @@ export const AccordionComponent = ({path,title}) => {
             </Link>
         </AccordionItem>
     </>
+    }
+    else{
+        return <>
+            <AccordionButton className={Styles.accordionChild}>
+                        <Box as='span' flex='1' textAlign='left'>
+                            <Text fontSize='md' as={'b'} > {title} </Text>
+                        </Box>
+                        <AccordionIcon />
+                    </AccordionButton>
+        </>
+    }
 }
