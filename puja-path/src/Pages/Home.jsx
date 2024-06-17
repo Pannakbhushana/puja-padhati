@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Text } from '@chakra-ui/react';
 import Styles from "../Styles/CustomStyles.module.css";
-import { CustomAccordions } from "../Components/CustomAccordions";
+import { HomeAccordions } from "../Components/HomeAccordions";
 
 const Home = () => {
     return <Box className={Styles.homeContainer} >
@@ -12,7 +12,7 @@ const Home = () => {
             <Text fontSize='xl' as={'b'} >|| देव पूजन ||</Text>
             <br />
             <br />
-            <CustomAccordions/>
+            <HomeAccordions/>
         </Box>
 
         <Box className={Styles.homeImageContainer}>

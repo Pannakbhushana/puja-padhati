@@ -2,28 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/CustomStyles.module.css";
 import { Box, Text, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from '@chakra-ui/react';
+import { AccordionComponent } from "./AccordionComponent";
 
-export const CustomAccordions = () => {
+export const HomeAccordions = () => {
     return <>
         <Accordion >
+                <AccordionComponent path={"//ganesh-pujan"} title={"गणेशपूजनम्"}/>
+                <AccordionComponent path={"/kalash-puja"} title={"कलशपूजनम्"}/>
+           
             <AccordionItem>
-
-                <Link to={'/ganesh-pujan'} className={Styles.accordionChild}>
-                    <AccordionButton>
-                        <Box as='span' flex='1' textAlign='left'>
-                            <Text fontSize='md' as={'b'} > गणेश पूजन </Text>
-                        </Box>
-                        <AccordionIcon />
-                    </AccordionButton>
-                </Link>
-
-            </AccordionItem>
-
-            <AccordionItem>
-
                 <AccordionButton>
                     <Box as='span' flex='1' textAlign='left'>
-                        <Text fontSize='md' as={'b'} > विष्णु पूजन </Text>
+                        <Text fontSize='md' as={'b'} > सत्यनारणपूजनम् </Text>
                     </Box>
                     <AccordionIcon />
                 </AccordionButton>

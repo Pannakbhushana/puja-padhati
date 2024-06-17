@@ -26,6 +26,7 @@ export default function Navbar() {
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
+            border={'1px solid rgba(255, 255, 255, 0.7)'}
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box><Link to={'/'}><img src={'./om.png'} alt="Om" style={{width:"60px"}} /></Link></Box>
@@ -73,10 +74,10 @@ export default function Navbar() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
+          <Box pb={4} display={{ md: 'none' }} style={{backgroundColor: "rgba(255, 255, 255, 0.5)",borderRadius:"5px",marginTop:'2%'}}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((elm, i) => (
-                <NavLink key={i} to={elm.path}><Text fontSize='md' as={'b'} >{elm.title}</Text></NavLink>
+                <NavLink key={i} to={elm.path}><Text fontSize='md' as={'b'} onClick={onClose}>{elm.title}</Text></NavLink>
               ))}
             </Stack>
           </Box>
