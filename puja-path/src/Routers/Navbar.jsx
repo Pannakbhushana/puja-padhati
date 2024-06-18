@@ -13,7 +13,7 @@ const Links = [
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { changeTheme } = useContext(ThemeContext)
-  const { handleAmoungUs,handleSpider,handleColors,handleStarry,handleNone } = useContext(ParticleContext)
+  const { handleAmoungUs,handleSpider,handleStarry,handleNone } = useContext(ParticleContext)
 
   return (
     <>
@@ -43,25 +43,22 @@ export default function Navbar() {
 
 
           </HStack>
-          <Flex alignItems={'center'}>
+          <Flex alignItems={'center'} >
 
             <Stack align='center' direction='row' >
               <Switch size='lg' onChange={changeTheme} colorScheme={'gray'} />
             </Stack>
             <div style={{ width: "20px" }}></div>
-            <Menu>
-              <MenuButton style={{border:"2px solid teal", padding:"5px 20px 5px 20px", borderRadius:"5px", color:"teal"}} >
+            <Menu >
+              <MenuButton style={{border:"2px solid rgba(255, 255, 255, 0.7)", padding:"5px 20px 5px 20px", borderRadius:"5px"}} >
                 Theme
               </MenuButton>
 
-              <MenuList style={{color:"black"}}>
-                <MenuItem onClick={handleAmoungUs}>Among Us</MenuItem>
+              <MenuList style={{color:"black"}} >
+                <MenuItem onClick={handleAmoungUs} >Among Us</MenuItem>
                 <MenuDivider />
 
                 <MenuItem onClick={handleSpider}>Spider</MenuItem>
-                <MenuDivider />
-
-                <MenuItem onClick={handleColors}>Colors</MenuItem>
                 <MenuDivider />
 
                 <MenuItem onClick={handleStarry}>Starry</MenuItem>

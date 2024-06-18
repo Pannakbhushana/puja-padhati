@@ -1,7 +1,7 @@
 import React,{ useContext, useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; 
-import { amoungUs,spider,colors,starry } from "../utils/particles";
+import { amoungUs,spider,starry } from "../utils/particles";
 import { ParticleContext } from "../ContextApi/ParticleContext";
 
 
@@ -25,12 +25,10 @@ const ParticlesContainer = () => {
     switch (particle) {
       case "spider":
         return spider;
-      case "colors":
-        return colors;
       case "starry":
         return starry;
       case "none":
-        return { particles: { number: { value: 0 } } }; // Disables particles
+        return { particles: { number: { value: 0 } } }; 
       default:
         return amoungUs;
     }

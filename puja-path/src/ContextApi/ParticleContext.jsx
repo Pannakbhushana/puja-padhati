@@ -13,10 +13,6 @@ export const ParticleContextProvider=({children})=>{
         setParticle("spider");
     }
 
-    const handleColors=()=>{
-        setParticle("colors");
-    }
-
     const handleStarry=()=>{
         setParticle("starry");
     }
@@ -25,5 +21,5 @@ export const ParticleContextProvider=({children})=>{
         setParticle("none");
     }
 
-    return <ParticleContext.Provider value={{particle, handleAmoungUs,handleSpider,handleColors,handleStarry,handleNone}}>{children}</ParticleContext.Provider>
+    return <ParticleContext.Provider value={{particle, handleAmoungUs,handleSpider,handleStarry,handleNone}}>{children}</ParticleContext.Provider>
 }
