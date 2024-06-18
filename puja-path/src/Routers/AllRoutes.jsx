@@ -8,6 +8,7 @@ import { SatnarayanKatha } from "../Devpujan/SatnarayanPuja/SatnarayanKatha";
 import AboutMe from "../Pages/AboutMe";
 import { KalashPuja } from "../Devpujan/KalashPuja";
 import { PageNotFound } from "../Pages/PageNotFound";
+import { SatnarayanPujanm } from "../Devpujan/SatnarayanPuja/SatnarayanPujanm";
 
 const AllRoutes = ()=> {
     return <>
@@ -19,6 +20,7 @@ const AllRoutes = ()=> {
                 <Route path="/satnarayan-katha" element={<SatnarayanKatha/>} />
                 <Route path="/about-me" element={<AboutMe/>} />
                 <Route path="/kalash-puja" element={<KalashPuja/>} />
+                <Route path="/satnarayan-puja" element={<SatnarayanPujanm/>} />
                 <Route path="*" element={<PageNotFound/>} />
             </Routes>
     </>

@@ -14,9 +14,9 @@ function HomeAccordions() {
                 <AccordionComponent title={"सत्यनारणपूजनम्"} />
                 <AccordionPanel pb={4} >
                     <Box w={'95%'} ml={'5%'} textAlign={'left'}>
-                        <Link to={"/satnarayan-pujan-vidhi"} className={Styles.accordionChild}><Text fontSize='md' as={'b'} > सत्यनारण व्रत पूजन सामग्री एवं विधि </Text></Link> <br /><br />
+                        <Link to={"/satnarayan-pujan-vidhi"} className={Styles.accordionChild}><Text fontSize='md' as={'b'} > सामग्री एवं विधि </Text></Link> <br /><br />
+                        <Link to={"/satnarayan-puja"} className={Styles.accordionChild}> <Text fontSize='md' as={'b'} >सत्यनारायणपूजनम् </Text></Link> <br /><br />
                         <Link to={"/satnarayan-katha"} className={Styles.accordionChild}> <Text fontSize='md' as={'b'} >सत्यनारायण व्रत कथा </Text></Link> <br /><br />
-                        <Link to={"/satnarayan-katha"} className={Styles.accordionChild}> <Text fontSize='md' as={'b'} >सत्यनारायण पूजन </Text></Link> <br /><br />
                     </Box>
                 </AccordionPanel>
             </AccordionItem>
