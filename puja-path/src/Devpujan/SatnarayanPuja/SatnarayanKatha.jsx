@@ -21,7 +21,6 @@ export const SatnarayanKatha = () => {
                             {katha.description}
                         </Text>
                     </Box>
-                    <br />
                     <Text fontSize='xl' as={'b'} >{katha.end}</Text>
                     <br />
                     <br />

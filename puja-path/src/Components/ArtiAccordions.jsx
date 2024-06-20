@@ -4,7 +4,7 @@ import { Accordion, AccordionItem, AccordionPanel, Text, Box, AccordionButton, A
 export const ArtiAccordions = ({title,description}) => {
     return <>
         <Accordion allowMultiple>
-            <AccordionItem>
+            <AccordionItem w={['100%','100%','50%']} ml={['0', '0', '25%']} borderColor={'rgba(255, 255, 255, 0.3)'}>
                 <AccordionButton>
                     <Box as='span' flex='1'>
                         <Text fontSize='md' as={'b'} >{title}  </Text>   

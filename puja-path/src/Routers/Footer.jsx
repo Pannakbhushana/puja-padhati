@@ -21,7 +21,7 @@ export default function Footer() {
 
         <Link to='/'>
           <HStack spacing={2} alignItems={'center'}>
-            <Box><img src={'./om.png'} alt="Om" style={{ width: "60px" }} /></Box>
+            <Box><img src={'./om.png'} alt="Om" style={{ width: "30px" }} /></Box>
             <Text as='b'>कर्मकांड</Text>
           </HStack>
         </Link>

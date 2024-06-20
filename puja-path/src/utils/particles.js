@@ -173,7 +173,7 @@ export const amoungUs={
         }
       },
       "color": {
-        "value": "#fff",
+        "value": "#fff", //change the color
         "animation": {
           "h": {
             "count": 0,
@@ -291,7 +291,7 @@ export const amoungUs={
         },
         "random": false,
         "size": false,
-        "speed": 2,
+        "speed": 1,  //increase speed
         "spin": {
           "acceleration": 0,
           "enable": false

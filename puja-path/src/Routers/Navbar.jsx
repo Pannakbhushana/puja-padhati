@@ -1,9 +1,11 @@
-import { Box,Text, Flex, HStack, IconButton, Menu, MenuButton, MenuList, MenuItem, MenuDivider, useDisclosure, Stack, Switch } from '@chakra-ui/react';
+import { Box,Text, Flex, HStack, IconButton, Menu, MenuButton, MenuList, MenuItem, MenuDivider, useDisclosure, Stack } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { NavLink,Link } from "react-router-dom";
 import { useContext } from 'react';
 import { ThemeContext } from '../ContextApi/ThemeContext';
 import { ParticleContext } from '../ContextApi/ParticleContext';
+import { CiSun } from "react-icons/ci";
+import { PiMoonLight } from "react-icons/pi";
 
 const Links = [
   { title: "DASHBOARD", path: "/" },
@@ -14,6 +16,7 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { changeTheme } = useContext(ThemeContext)
   const { handleAmoungUs,handleSpider,handleStarry,handleNone } = useContext(ParticleContext)
+  const {isDark}=useContext(ThemeContext);
 
   return (
     <>
@@ -44,10 +47,13 @@ export default function Navbar() {
 
           </HStack>
           <Flex alignItems={'center'} >
-
-            <Stack align='center' direction='row' >
-              <Switch size='lg' onChange={changeTheme} colorScheme={'gray'} />
-            </Stack>
+              <Text 
+                fontSize={'4xl'} 
+                color={isDark ? '#333333' : '#fff'} 
+                onClick={changeTheme} 
+                cursor={'pointer'} > 
+                  {isDark ? <PiMoonLight /> : <CiSun /> } 
+                </Text>
             <div style={{ width: "20px" }}></div>
             <Menu >
               <MenuButton style={{border:"2px solid rgba(255, 255, 255, 0.7)", padding:"5px 20px 5px 20px", borderRadius:"5px"}} >

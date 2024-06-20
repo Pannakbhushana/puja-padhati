@@ -10,7 +10,7 @@ function App() {
   const {isDark}=useContext(ThemeContext);
 
   return (
-    <div className={isDark ? "coloredTheme" : "darkTheme"}>
+    <div className={isDark ? "coloredTheme" : "darkTheme"} >
      <Navbar/>
      <AllRoutes/>
      <ParticlesContainer/>

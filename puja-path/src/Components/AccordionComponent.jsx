@@ -7,7 +7,7 @@ export const AccordionComponent = ({path,title}) => {
 
     if(path){
         return <>
-        <AccordionItem>
+        <AccordionItem borderColor={'rgba(255, 255, 255, 0.3)'}>
             <Link to={path} className={Styles.accordionChild}>
                     <AccordionButton>
                         <Box as='span' flex='1' textAlign='left'>

@@ -16,7 +16,7 @@ const Home = () => {
         </Box>
 
         <Box className={Styles.homeImageContainer}>
-            <img src={"/valmiki.png"} alt="" style={{ width: "100%", height: "100%" }} />
+            {/* <img src={"/valmiki.png"} alt="" style={{ width: "100%", height: "100%" }} /> */}
         </Box>
 
 
