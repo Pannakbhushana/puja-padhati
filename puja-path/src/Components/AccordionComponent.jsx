@@ -13,7 +13,7 @@ export const AccordionComponent = ({path,title}) => {
                         <Box as='span' flex='1' textAlign='left'>
                             <Text fontSize='md' as={'b'} > {title} </Text>
                         </Box>
-                        <AccordionIcon />
+                        {/* <AccordionIcon /> */}
                     </AccordionButton>
             </Link>
         </AccordionItem>

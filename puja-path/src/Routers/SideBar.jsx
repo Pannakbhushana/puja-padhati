@@ -22,7 +22,7 @@ function SideBar() {
             </DrawerHeader>
             
             <DrawerBody mt={'5%'}>
-              <HomeAccordions/>
+              <HomeAccordions isHight={false}/>
             </DrawerBody>
 
           </DrawerContent>

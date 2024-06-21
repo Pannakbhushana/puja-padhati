@@ -12,7 +12,7 @@ const Home = () => {
             <Text fontSize='xl' as={'b'} >|| देव पूजन ||</Text>
             <br />
             <br />
-            <HomeAccordions/>
+            <HomeAccordions isHight={true}/>
         </Box>
 
         <Box className={Styles.homeImageContainer}>

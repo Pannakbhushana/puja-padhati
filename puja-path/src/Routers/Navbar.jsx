@@ -23,13 +23,14 @@ export default function Navbar() {
       <Box px={4}  >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
-            colorScheme={""}
+          colorScheme=''
+            color={isDark ? "#333333" : '#fff'}
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon/>}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
-            border={'1px solid rgba(255, 255, 255, 0.7)'}
+            border={isDark ? "1px solid #333333" : '1px solid #fff'}
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box><Link to={'/'}><img src={'./om.png'} alt="Om" style={{width:"60px"}} /></Link></Box>
@@ -56,7 +57,11 @@ export default function Navbar() {
                 </Text>
             <div style={{ width: "20px" }}></div>
             <Menu >
-              <MenuButton style={{border:"2px solid rgba(255, 255, 255, 0.7)", padding:"5px 20px 5px 20px", borderRadius:"5px"}} >
+              <MenuButton style={{
+                            border:isDark ? "1px solid #333333" : '1px solid #fff)', 
+                            padding:"5px 20px 5px 20px", 
+                            borderRadius:"5px"
+                            }} >
                 Theme
               </MenuButton>
 

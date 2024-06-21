@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Routes} from "react-router-dom";
+import {Route, Router, Routes} from "react-router-dom";
 import Home from "../Pages/Home";
 import Arti from "../Pages/Arti";
 import { GaneshPuja } from "../Devpujan/GaneshPuja";
@@ -20,9 +20,13 @@ import { ChetraPaal } from "../Devpujan/ChetraPaal";
 import { VastuPujan } from "../Devpujan/VastuPujan";
 import { SarvatoBhadra } from "../Devpujan/SarvatoBhadra";
 import { ChaturLingato } from "../Devpujan/ChaturLingato";
+import ScrollToTop from "./ScrollToTop";
+
+
 
 const AllRoutes = ()=> {
     return <>
+            <ScrollToTop/>
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/arti" element={<Arti/>} />
