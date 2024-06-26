@@ -22,6 +22,7 @@ import ScrollToTop from "./ScrollToTop";
 import { HavanVidhi } from "../Devpujan/HavanVidhi";
 import Katha from "../Pages/Katha";
 import { RudraBhishek } from "../Devpujan/RudraBhishek";
+import { PujanVidhi } from "../Devpujan/PujanVidhi";
 
 
 
@@ -49,6 +50,7 @@ const AllRoutes = ()=> {
                 <Route path="/havanvidhi" element={<HavanVidhi/>} />
                 <Route path="/katha" element={<Katha/>} />
                 <Route path="/rudrabhishek" element={<RudraBhishek/>} />
+                <Route path="/pujavidhi" element={<PujanVidhi/>} />
                 <Route path="*" element={<PageNotFound/>} />
             </Routes>
     </>

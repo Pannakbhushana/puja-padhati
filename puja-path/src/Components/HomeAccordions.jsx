@@ -26,6 +26,7 @@ function HomeAccordions({isHight}) {
             <AccordionComponent path={"/satnarayan-puja"} title={"सत्यनारायणपूजनम्"} />
             <AccordionComponent path={"/havanvidhi"} title={"हवन विधि"}  />
             <AccordionComponent path={"/rudrabhishek"} title={"रुद्राष्टाध्यायी"}  />
+            <AccordionComponent path={"/pujavidhi"} title={"पूजन सामग्री"}  />
         </Accordion>
 
     )
