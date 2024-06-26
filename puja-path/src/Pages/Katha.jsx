@@ -10,7 +10,7 @@ const Katha = () => {
     const contex=useContext(KathaContext);
 
     return <Box pt={'80px'}>
-      <Text fontSize='2xl' as={'b'} >|| कथा  ||</Text>
+      <Text fontSize='2xl' as={'b'} >|| कथाएँ  ||</Text>
         <Box style={{ padding: "2% 5% 5% 5%", minHeight: "95vh" }}>
            <KathaContainer title={'सत्यनारायण व्रत कथा'} katha={satnarayanaKatha} hide={contex.isSatnarayan} handleToggle={contex.handleSatnarayan}/>
            <KathaContainer title={'वट सावित्री व्रत कथा'} katha={vatSavitriKatha} hide={contex.isVat} handleToggle={contex.handleVat}/>
