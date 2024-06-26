@@ -7,7 +7,7 @@
 
 .homeChildOne {
     width: 30%;
-    height: 90vh;
+    min-height: 90vh;
     overflow-x: hidden;
     overflow-y: auto;
     scrollbar-color: rgba(255, 255, 255, 0.1) transparent;

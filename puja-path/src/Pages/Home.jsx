@@ -4,7 +4,8 @@ import Styles from "../Styles/CustomStyles.module.css";
 import { HomeAccordions } from "../Components/HomeAccordions";
 
 const Home = () => {
-    return <Box className={Styles.homeContainer} pt={'60px'} >
+    return <>
+        <Box className={Styles.homeContainer} pt={'60px'} >
 
         <Box className={Styles.homeChildOne}>
             <br />
@@ -17,6 +18,7 @@ const Home = () => {
             
         <Box className={Styles.homeImageContainer}></Box>
     </Box>
+    </>
 }
 
 export default Home
