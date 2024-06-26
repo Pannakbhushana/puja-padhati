@@ -1,22 +1,22 @@
 import React from "react";
 import { Text, Box } from '@chakra-ui/react';
 import { sodasopcharPuja } from "../utils/kalash";
-import SideBar from "../Routers/SideBar";
-import { navgrahPrarthana } from "../utils/navgrahPujam";
 import { saptGhriMatrikaAvahan } from "../utils/saptGhriMatrikaPuja";
 
 
 
 export const SaptGhritMatrika = () => {
 
-    return <div style={{ minHeight: "95vh" }}>
-        <br />
-        <SideBar />
+    return <div style={{ minHeight: "95vh",paddingTop:'80px' }}>
         <Text fontSize='2xl' as={'b'} >|| सप्तघृतमातृकापूजनम् ||</Text>
         <br />
         <br />
         <Box border={'5px solid black'} w={['80%', '60%', '50%']} h={['200px', '300px', '500px']} ml={['10%', '20%', '25%']} >
-            <img src={'/vasordhara.png'} alt="Navgrah-Mandal" style={{ width: "100%", height: "100%" }} />
+            <img 
+                src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/84fdfacd-4018-415a-92b7-c78a542adfaf'} 
+                alt="/vasordhara.png" 
+                style={{ width: "100%", height: "100%" }} 
+                />
         </Box>
         <br />
         <br />

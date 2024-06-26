@@ -7,10 +7,12 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter } from "react-router-dom";
 import { ThemeContextProvider } from './ContextApi/ThemeContext';
 import { ParticleContextProvider } from './ContextApi/ParticleContext';
+import { KathaContextProvider } from './ContextApi/KathaContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <KathaContextProvider>
   <ParticleContextProvider>
   <ThemeContextProvider>
     <BrowserRouter>
@@ -20,6 +22,7 @@ root.render(
     </BrowserRouter>
   </ThemeContextProvider>
   </ParticleContextProvider>
+  </KathaContextProvider>
 );
 
 

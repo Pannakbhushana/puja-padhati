@@ -1,19 +1,20 @@
 import React from "react";
 import { Text, Box } from '@chakra-ui/react';
 import { sodasopcharPuja } from "../utils/kalash";
-import SideBar from "../Routers/SideBar";
 import { sodasmatrikaAvahan } from "../utils/sodasMatrikaPuja";
 
 export const SodashMatrika = () => {
-
-    return <div style={{ minHeight: "95vh" }}>
-        <br />
-        <SideBar />
+   
+    return <div style={{ minHeight: "95vh",paddingTop:'80px' }}>
         <Text fontSize='2xl' as={'b'} >|| षोडशमातृकापूजनम् ||</Text>
         <br />
         <br />
         <Box  w={['80%', '60%', '50%']} h={['200px', '300px', '500px']} ml={['10%', '20%', '25%']} >
-            <img src={'/sodasmatrika.png'} alt="Navgrah-Mandal" style={{ width: "100%", height: "100%" }} />
+            <img src={' https://github.com/Pannakbhushana/karm-kand/assets/112654188/1afd3e8a-085c-4130-9b8a-066954159e0f'} 
+            alt="/sodasmatrika.png" 
+            style={{ width: "100%", height: "100%" }}
+             />
+       
         </Box>
         <br />
         <br />

@@ -1,51 +1,32 @@
-import { Box,Text, Flex, HStack, IconButton, Menu, MenuButton, MenuList, MenuItem, MenuDivider, useDisclosure, Stack } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import { NavLink,Link } from "react-router-dom";
+import { Box,Text, Flex, HStack, Menu, MenuButton, MenuList, MenuItem, MenuDivider } from '@chakra-ui/react';
+import { Link } from "react-router-dom";
 import { useContext } from 'react';
 import { ThemeContext } from '../ContextApi/ThemeContext';
 import { ParticleContext } from '../ContextApi/ParticleContext';
 import { CiSun } from "react-icons/ci";
 import { PiMoonLight } from "react-icons/pi";
-
-const Links = [
-  { title: "DASHBOARD", path: "/" },
-  { title: "ARTI", path: "/arti" }
-];
+import SideBar from './SideBar';
 
 export default function Navbar() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const { changeTheme } = useContext(ThemeContext)
-  const { handleAmoungUs,handleSpider,handleStarry,handleNone } = useContext(ParticleContext)
+  const { handleAmoungUs,handleNone } = useContext(ParticleContext)
   const {isDark}=useContext(ThemeContext);
 
   return (
     <>
-      <Box px={4}  >
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <IconButton
-          colorScheme=''
-            color={isDark ? "#333333" : '#fff'}
-            size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon/>}
-            aria-label={'Open Menu'}
-            display={{ md: 'none' }}
-            onClick={isOpen ? onClose : onOpen}
-            border={isDark ? "1px solid #333333" : '1px solid #fff'}
-          />
+        <Flex h={16} 
+          w={'100%'}
+          position={'fixed'} 
+          zIndex={2} 
+          alignItems={'center'} 
+          justifyContent={'space-between'}
+          pr={'2%'}
+          pl={'2%'}
+          background={isDark ? 'linear-gradient(to right, #d56b01, #FFFF00)' : 'linear-gradient(to right, #020202, #444444)' }
+          >
           <HStack spacing={8} alignItems={'center'}>
             <Box><Link to={'/'}><img src={'./om.png'} alt="Om" style={{width:"60px"}} /></Link></Box>
-            <HStack
-              as={'nav'}
-              spacing={4}
-              display={{ base: 'none', md: 'flex' }}>
-              {Links.map((elm, i) => (
-                <NavLink key={i} to={elm.path} style={({isActive})=>{
-                  return isActive ? {textDecoration:"underline", textUnderlineOffset:"7px"} :{}
-                }}><Text fontSize='md' as={'b'} >{elm.title}</Text></NavLink>
-              ))}
-            </HStack>
-
-
+            <SideBar />
           </HStack>
           <Flex alignItems={'center'} >
               <Text 
@@ -58,9 +39,9 @@ export default function Navbar() {
             <div style={{ width: "20px" }}></div>
             <Menu >
               <MenuButton style={{
-                            border:isDark ? "1px solid #333333" : '1px solid #fff)', 
+                            border:isDark ? "1px solid #333333" : "1px solid #fff", 
                             padding:"5px 20px 5px 20px", 
-                            borderRadius:"5px"
+                            borderRadius:"5px",
                             }} >
                 Theme
               </MenuButton>
@@ -68,29 +49,11 @@ export default function Navbar() {
               <MenuList style={{color:"black"}} >
                 <MenuItem onClick={handleAmoungUs} >Among Us</MenuItem>
                 <MenuDivider />
-
-                <MenuItem onClick={handleSpider}>Spider</MenuItem>
-                <MenuDivider />
-
-                <MenuItem onClick={handleStarry}>Starry</MenuItem>
-                <MenuDivider />
-
                 <MenuItem onClick={handleNone}>None</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
         </Flex>
-
-        {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }} style={{backgroundColor: "rgba(255, 255, 255, 0.5)",borderRadius:"5px",marginTop:'2%'}}>
-            <Stack as={'nav'} spacing={4}>
-              {Links.map((elm, i) => (
-                <NavLink key={i} to={elm.path}><Text fontSize='md' as={'b'} onClick={onClose}>{elm.title}</Text></NavLink>
-              ))}
-            </Stack>
-          </Box>
-        ) : null}
-      </Box>
     </>
   );
 }

@@ -4,7 +4,7 @@ import Styles from "../Styles/CustomStyles.module.css";
 
 
 const AboutMe = () => {
-    return <Box className={Styles.aboutContainer} >
+    return <Box className={Styles.aboutContainer} pt={'60px'} >
 
         <Box className={Styles.aboutChildOne}>
             <img src={"/karmkand.png"} alt="" style={{ width: "100%", height: "100%" }} />
@@ -12,7 +12,7 @@ const AboutMe = () => {
 
         <Box className={Styles.aboutChildTwo} textAlign={'justify'}>
             <Text fontSize='md' as={'b'}  >
-                Rahul Mishra, the visionary behind "KARMKAND" was born and raised in a devout Hindu Brahmana family. From an early age, 
+                Rahul Mishra, the visionary behind KARMKAND app was born and raised in a devout Hindu Brahmana family. From an early age, 
                 he demonstrated a profound curiosity about the world, constantly seeking answers to life's deeper questions. 
                 This inherent inquisitiveness naturally led him to a spiritual path, nurtured by the rich spiritual environment of 
                 his upbringing.

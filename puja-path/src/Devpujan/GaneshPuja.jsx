@@ -1,14 +1,10 @@
 import React from "react";
 import { Box, Text } from '@chakra-ui/react';
-import SideBar from "../Routers/SideBar";
 import { ganeshPuja,prePuja,swastiVachan,pauranikSloka} from "../utils/ganeshPuja";
 
 export const GaneshPuja = () => {
-
     return <>
-        <div style={{ minHeight: "95vh" }}>
-            <br />
-            <SideBar />
+        <div style={{ minHeight: "95vh", paddingTop:'80px' }}>
             <Text fontSize='2xl' as={'b'} >|| गणेश पूजन ||</Text>
             <br />
             <br />

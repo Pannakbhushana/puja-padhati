@@ -1,14 +1,12 @@
 import React from "react";
-import {Route, Router, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Home from "../Pages/Home";
 import Arti from "../Pages/Arti";
 import { GaneshPuja } from "../Devpujan/GaneshPuja";
-import { PujanVidhi } from "../Devpujan/SatnarayanPuja/PujanVidhi";
-import { SatnarayanKatha } from "../Devpujan/SatnarayanPuja/SatnarayanKatha";
 import AboutMe from "../Pages/AboutMe";
 import { KalashPuja } from "../Devpujan/KalashPuja";
 import { PageNotFound } from "../Pages/PageNotFound";
-import { SatnarayanPujanm } from "../Devpujan/SatnarayanPuja/SatnarayanPujanm";
+import { SatnarayanPujanm } from "../Devpujan/SatnarayanPujanm";
 import { PanchDevta } from "../Devpujan/PanchDevta";
 import { NavgrahPuja } from "../Devpujan/NavgrahPuja";
 import { AdhiPratydhiDev } from "../Devpujan/AdhiPratydhiDev";
@@ -21,6 +19,9 @@ import { VastuPujan } from "../Devpujan/VastuPujan";
 import { SarvatoBhadra } from "../Devpujan/SarvatoBhadra";
 import { ChaturLingato } from "../Devpujan/ChaturLingato";
 import ScrollToTop from "./ScrollToTop";
+import { HavanVidhi } from "../Devpujan/HavanVidhi";
+import Katha from "../Pages/Katha";
+import { RudraBhishek } from "../Devpujan/RudraBhishek";
 
 
 
@@ -31,8 +32,6 @@ const AllRoutes = ()=> {
                 <Route path="/" element={<Home/>} />
                 <Route path="/arti" element={<Arti/>} />
                 <Route path="/ganesh-pujan" element={<GaneshPuja/>} />
-                <Route path="/satnarayan-pujan-vidhi" element={<PujanVidhi/>} />
-                <Route path="/satnarayan-katha" element={<SatnarayanKatha/>} />
                 <Route path="/about-me" element={<AboutMe/>} />
                 <Route path="/kalash-puja" element={<KalashPuja/>} />
                 <Route path="/satnarayan-puja" element={<SatnarayanPujanm/>} />
@@ -47,6 +46,9 @@ const AllRoutes = ()=> {
                 <Route path="/vastu-puja" element={<VastuPujan/>} />
                 <Route path="/sarvato-puja" element={<SarvatoBhadra/>} />
                 <Route path="/chaturlingato-puja" element={<ChaturLingato/>} />
+                <Route path="/havanvidhi" element={<HavanVidhi/>} />
+                <Route path="/katha" element={<Katha/>} />
+                <Route path="/rudrabhishek" element={<RudraBhishek/>} />
                 <Route path="*" element={<PageNotFound/>} />
             </Routes>
     </>

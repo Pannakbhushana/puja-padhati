@@ -4,7 +4,7 @@ import Styles from "../Styles/CustomStyles.module.css";
 import { HomeAccordions } from "../Components/HomeAccordions";
 
 const Home = () => {
-    return <Box className={Styles.homeContainer} >
+    return <Box className={Styles.homeContainer} pt={'60px'} >
 
         <Box className={Styles.homeChildOne}>
             <br />
@@ -12,14 +12,10 @@ const Home = () => {
             <Text fontSize='xl' as={'b'} >|| देव पूजन ||</Text>
             <br />
             <br />
-            <HomeAccordions isHight={true}/>
+            <HomeAccordions isHight={true} />
         </Box>
-
-        <Box className={Styles.homeImageContainer}>
-            {/* <img src={"/valmiki.png"} alt="" style={{ width: "100%", height: "100%" }} /> */}
-        </Box>
-
-
+            
+        <Box className={Styles.homeImageContainer}></Box>
     </Box>
 }
 

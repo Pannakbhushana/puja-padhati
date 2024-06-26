@@ -1,21 +1,18 @@
 import React from "react";
 import { Text,Box } from '@chakra-ui/react';
 import { sodasopcharPuja} from "../utils/kalash";
-import SideBar from "../Routers/SideBar";
 import { navgrahDevAwahan, navgrahPrarthana} from "../utils/navgrahPujam";
 
 
 
 export const NavgrahPuja = () => {
 
-    return <div style={{ minHeight: "95vh" }}>
-       <br />
-       <SideBar/>
+    return <div style={{ minHeight: "95vh",paddingTop:'80px' }}>
         <Text fontSize='2xl' as={'b'} >|| नवग्रहपूजनम् ||</Text>
         <br />
         <br />
         <Box  w={['80%','60%','50%']} h={['200px','300px','500px']} ml={['10%','20%','25%']} >
-            <img src={'/navgrah.png'} alt="Navgrah-Mandal" style={{width:"100%",height:"100%"}} />
+            <img src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/cd91e39c-6460-4dc4-84de-9ffcd81501a7'} alt="/navgrah.png" style={{width:"100%",height:"100%"}} />
         </Box>
         <br />
         <br />

@@ -17,9 +17,12 @@
     width: 60%;
     height: 95vh;
     background-image: url('../Images/valmiki.png');
+    /* background-image: url('https://github.com/Pannakbhushana/karm-kand/assets/112654188/2d0d7d09-344b-4409-97e1-33f45e787433'); */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
 .accordionContainer{

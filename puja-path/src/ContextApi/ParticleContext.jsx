@@ -8,18 +8,9 @@ export const ParticleContextProvider=({children})=>{
     const handleAmoungUs=()=>{
         setParticle("amoungUs");
     }
-
-    const handleSpider=()=>{
-        setParticle("spider");
-    }
-
-    const handleStarry=()=>{
-        setParticle("starry");
-    }
-
     const handleNone =()=>{
         setParticle("none");
     }
 
-    return <ParticleContext.Provider value={{particle, handleAmoungUs,handleSpider,handleStarry,handleNone}}>{children}</ParticleContext.Provider>
+    return <ParticleContext.Provider value={{particle, handleAmoungUs,handleNone}}>{children}</ParticleContext.Provider>
 }

@@ -1,15 +1,12 @@
 import React from "react";
 import { Box, Text } from '@chakra-ui/react';
-import SideBar from "../Routers/SideBar";
 import { sodasopcharPuja } from "../utils/kalash";
 
 
 export const PanchDevta = () => {
 
     return <>
-        <div style={{ minHeight: "95vh" }}>
-            <br />
-            <SideBar />
+        <div style={{ minHeight: "95vh",paddingTop:'80px' }}>
             <Text fontSize='2xl' as={'b'} >|| पञ्चदेवता  पूजन ||</Text>
             <br />
             <br />

@@ -1,16 +1,13 @@
 import React from "react";
 import { Text, Box } from '@chakra-ui/react';
 import { sodasopcharPuja } from "../utils/kalash";
-import SideBar from "../Routers/SideBar";
 import { vastuDevAvahan } from "../utils/vastuPuja";
 
 
 
 export const VastuPujan = () => {
 
-    return <div style={{ minHeight: "95vh" }}>
-        <br />
-        <SideBar />
+    return <div style={{ minHeight: "95vh",paddingTop:'80px' }}>
         <Text fontSize='2xl' as={'b'} >|| वास्तुमंडल पूजनम् ||</Text>
         <br />
         <br />
@@ -19,7 +16,7 @@ export const VastuPujan = () => {
             h={['200px', '300px', '500px']} 
             ml={['10%', '20%', '25%']} 
          >
-            <img src={'/vastu.png'} alt="Navgrah-Mandal" style={{ width: "100%", height: "100%" }} />
+            <img src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/39eb2fa6-44e6-46c1-853f-0f2db0176aed'} alt="/vastu.png" style={{ width: "100%", height: "100%" }} />
         </Box>
 <br />
 <br />

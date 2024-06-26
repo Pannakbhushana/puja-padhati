@@ -1,14 +1,11 @@
 import React from "react";
 import { Text, Box } from '@chakra-ui/react';
 import { sodasopcharPuja } from "../utils/kalash";
-import SideBar from "../Routers/SideBar";
 import { sarvatoBhadraAvahan } from "../utils/sarvato";
 
 export const SarvatoBhadra = () => {
 
-    return <div style={{ minHeight: "95vh" }}>
-        <br />
-        <SideBar />
+    return <div style={{ minHeight: "95vh",paddingTop:'80px' }}>
         <Text fontSize='2xl' as={'b'} >|| सर्वतोभद्र मंडल पूजनम् ||</Text>
         <br />
         <br />
@@ -17,7 +14,7 @@ export const SarvatoBhadra = () => {
             h={['200px', '300px', '500px']} 
             ml={['10%', '20%', '25%']} 
          >
-            <img src={'/sarvato.png'} alt="Navgrah-Mandal" style={{ width: "100%", height: "100%" }} />
+            <img src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/d0981fff-f988-4ea7-8bf9-f8e234b1b856'} alt="/sarvato.png" style={{ width: "100%", height: "100%" }} />
         </Box>
 <br />
 <br />

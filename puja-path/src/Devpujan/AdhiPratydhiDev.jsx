@@ -1,14 +1,11 @@
 import React from "react";
 import { Text, Box } from '@chakra-ui/react';
 import { sodasopcharPuja } from "../utils/kalash";
-import SideBar from "../Routers/SideBar";
 import { adhiDevAwahan, pratydhiDevAvahan } from "../utils/adhipratydhidev";
 
 export const AdhiPratydhiDev = () => {
 
-    return <div style={{ minHeight: "95vh" }}>
-        <br />
-        <SideBar />
+    return <div style={{ minHeight: "95vh",paddingTop:'80px' }}>
         <Text fontSize='2xl' as={'b'} >|| अधिदेवप्रत्यधिदेवपूजनम् ||</Text>
         <br />
         <br />

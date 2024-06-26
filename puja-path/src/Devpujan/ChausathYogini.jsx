@@ -1,21 +1,22 @@
 import React from "react";
 import { Text, Box } from '@chakra-ui/react';
 import { sodasopcharPuja } from "../utils/kalash";
-import SideBar from "../Routers/SideBar";
 import { yoginiAvahan, dhayan, pratistha,prarthana } from "../utils/yogini";
 
 
 
 export const ChausathYogini = () => {
 
-    return <div style={{ minHeight: "95vh" }}>
-        <br />
-        <SideBar />
+    return <div style={{ minHeight: "95vh",paddingTop:'80px' }}>
         <Text fontSize='2xl' as={'b'} >|| चतुष्षष्टि योगिनीपूजनम् ||</Text>
         <br />
         <br />
         <Box  w={['80%', '60%', '50%']} h={['200px', '300px', '500px']} ml={['10%', '20%', '25%']} >
-            <img src={'/yogini.png'} alt="Navgrah-Mandal" style={{ width: "100%", height: "100%" }} />
+            <img 
+                src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/04979925-68dd-4e62-8ac0-18eac9e804cd'} 
+                alt="/yogini.png" 
+                style={{ width: "100%", height: "100%" }} 
+                />
         </Box>
         <br />
         <br />

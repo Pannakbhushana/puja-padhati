@@ -1,15 +1,12 @@
 import React from "react";
 import { Text, Box } from '@chakra-ui/react';
 import { sodasopcharPuja } from "../utils/kalash";
-import SideBar from "../Routers/SideBar";
-import { sarvatoBhadraAvahan } from "../utils/sarvato";
 import { chaturLingatoAvahan } from "../utils/chaturlingatoPuja";
 
 export const ChaturLingato = () => {
 
-    return <div style={{ minHeight: "95vh" }}>
-        <br />
-        <SideBar />
+    return <div style={{ minHeight: "95vh",paddingTop:'80px' }}>
+
         <Text fontSize='2xl' as={'b'} >|| चतुर्लिङ्गतोभद्र मंडल पूजनम् ||</Text>
         <br />
         <br />
@@ -18,7 +15,7 @@ export const ChaturLingato = () => {
             h={['200px', '300px', '500px']}
             ml={['10%', '20%', '25%']}
         >
-            <img src={'/chaturlingato.png'} alt="Navgrah-Mandal" style={{ width: "100%", height: "100%" }} />
+            <img src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/8445b50e-af33-4211-99ce-3055c1d8ffea'} alt="/chaturlingato.png" style={{ width: "100%", height: "100%" }} />
         </Box>
         <br />
         <br />
