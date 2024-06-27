@@ -7,7 +7,7 @@ export const PujanVidhi = () => {
 
     return <div style={{ minHeight: "95vh", paddingTop: '80px' }}>
         <Box p={"0 5% 5% 5%"}>
-            <Text fontSize='2xl' as={'b'} >|| श्री सत्यनारण व्रत पूजन विधि ||</Text>
+            {/* <Text fontSize='2xl' as={'b'} >|| श्री सत्यनारण व्रत पूजन विधि ||</Text>
             <br />
             <br />
 
@@ -40,9 +40,9 @@ export const PujanVidhi = () => {
             <br />
             <br />
             <br />
-            <br />
+            <br /> */}
 
-            <Text fontSize='2xl' as={'b'} >|| श्री सत्यनारायण व्रत पूजन सामग्री ||</Text>
+            <Text fontSize='2xl' as={'b'} >|| पूजन सामग्री ||</Text>
             <br />
             <br />
             <br />
