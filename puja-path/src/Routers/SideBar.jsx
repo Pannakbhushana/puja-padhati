@@ -11,6 +11,7 @@ import { ThemeContext } from '../ContextApi/ThemeContext';
 
 const Links = [
   { title: "आरती", path: "/arti" },
+  { title: "स्तुति", path: "/stuti" },
   {title:"कथाएँ",path:"/katha"}
 ];
 

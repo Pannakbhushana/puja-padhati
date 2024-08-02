@@ -23,6 +23,7 @@ import { HavanVidhi } from "../Devpujan/HavanVidhi";
 import Katha from "../Pages/Katha";
 import { RudraBhishek } from "../Devpujan/RudraBhishek";
 import { PujanVidhi } from "../Devpujan/PujanVidhi";
+import Stuti from "../Pages/Stuti";
 
 
 
@@ -32,6 +33,7 @@ const AllRoutes = ()=> {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/arti" element={<Arti/>} />
+                <Route path="/stuti" element={<Stuti/>} />
                 <Route path="/ganesh-pujan" element={<GaneshPuja/>} />
                 <Route path="/about-me" element={<AboutMe/>} />
                 <Route path="/kalash-puja" element={<KalashPuja/>} />

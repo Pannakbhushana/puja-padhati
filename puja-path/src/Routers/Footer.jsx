@@ -22,11 +22,11 @@ export default function Footer() {
         <Link to='/'>
           <HStack spacing={2} alignItems={'center'}>
             <Box><img src={'./om.png'} alt="Om" style={{ width: "30px" }} /></Box>
-            <Text as='b'>कर्मकांड</Text>
+            <Text as='b'>पूजापद्धति</Text>
           </HStack>
         </Link>
 
-        <Text style={{ fontSize: '12px' }}>© 2024 कर्मकांड. All rights reserved | Website developed by - 
+        <Text style={{ fontSize: '12px' }}>© 2024 पूजापद्धति All rights reserved | Website developed by - 
             <Link to={'/about-me'}><span style={{color:"blue",textDecoration:"underline"}}>@Rahul_Mishra</span></Link> 
           </Text>
         <Stack direction={'row'} spacing={6}>

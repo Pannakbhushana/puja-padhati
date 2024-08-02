@@ -1,6 +1,6 @@
-import { Box,Text, Flex, HStack, Menu, MenuButton, MenuList, MenuItem, MenuDivider } from '@chakra-ui/react';
+import { Box,Text, Flex, HStack,Switch } from '@chakra-ui/react';
 import { Link } from "react-router-dom";
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../ContextApi/ThemeContext';
 import { ParticleContext } from '../ContextApi/ParticleContext';
 import { CiSun } from "react-icons/ci";
@@ -11,6 +11,15 @@ export default function Navbar() {
   const { changeTheme } = useContext(ThemeContext)
   const { handleAmoungUs,handleNone } = useContext(ParticleContext)
   const {isDark}=useContext(ThemeContext);
+  const [particleStatus, setParticleStatus]=useState(true);
+
+  const handleChage=()=>{
+    setParticleStatus(!particleStatus)
+  }
+
+  useEffect(()=>{
+    {particleStatus ? handleAmoungUs() : handleNone()}
+  },[particleStatus])
 
   return (
     <>
@@ -37,21 +46,8 @@ export default function Navbar() {
                   {isDark ? <PiMoonLight /> : <CiSun /> } 
                 </Text>
             <div style={{ width: "20px" }}></div>
-            <Menu >
-              <MenuButton style={{
-                            border:isDark ? "1px solid #333333" : "1px solid #fff", 
-                            padding:"5px 20px 5px 20px", 
-                            borderRadius:"5px",
-                            }} >
-                Theme
-              </MenuButton>
-
-              <MenuList style={{color:"black"}} >
-                <MenuItem onClick={handleAmoungUs} >Among Us</MenuItem>
-                <MenuDivider />
-                <MenuItem onClick={handleNone}>None</MenuItem>
-              </MenuList>
-            </Menu>
+            
+            <Switch colorScheme={isDark ? 'yellow':'gray'} size='lg' onChange={handleChage} />
           </Flex>
         </Flex>
     </>
