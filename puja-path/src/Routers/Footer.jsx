@@ -31,11 +31,6 @@ export default function Footer() {
           </Text>
         <Stack direction={'row'} spacing={6}>
 
-          <Link to={'https://github.com/Pannakbhushana'}
-            target='_blank'
-            style={{ color: 'black', fontSize: '25px' }}><IoLogoGithub />
-          </Link>
-
           <Link to={'https://www.linkedin.com/in/rahul-mishra-060054241/'}
             target='_blank'
             style={{ color: 'blue', fontSize: '25px' }}><FaLinkedin />
