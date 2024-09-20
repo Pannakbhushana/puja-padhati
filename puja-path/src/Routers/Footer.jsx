@@ -1,6 +1,5 @@
 import { Box, Container, Stack, Text, HStack } from '@chakra-ui/react'
 import { FaLinkedin } from 'react-icons/fa'
-import { IoLogoGithub } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
 

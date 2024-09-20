@@ -1,6 +1,6 @@
 import React from 'react';
 import {Drawer,DrawerBody,DrawerHeader,DrawerOverlay,DrawerContent,useDisclosure,Button,Box,Text} from '@chakra-ui/react'
-import { CloseIcon } from '@chakra-ui/icons';
+import { ArrowForwardIcon, CloseIcon } from '@chakra-ui/icons';
 import { HomeAccordions } from '../Components/HomeAccordions';
 import { AiOutlineHome } from "react-icons/ai";
 import { useNavigate } from 'react-router-dom';
@@ -8,6 +8,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import { NavLink } from "react-router-dom";
 import { useContext } from 'react';
 import { ThemeContext } from '../ContextApi/ThemeContext';
+import ButtonLayout from '../Layouts/ButtonLayout';
 
 const Links = [
   { title: "आरती", path: "/arti" },
@@ -15,7 +16,7 @@ const Links = [
   {title:"कथाएँ",path:"/katha"}
 ];
 
-function SideBar() {
+function SideBar({isButton}) {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const {isDark}=useContext(ThemeContext);
     const navigate=useNavigate();
@@ -26,15 +27,15 @@ function SideBar() {
     }
 
     return (
-      <Box display={'flex'} justifyContent={'start'} w={'40px'} ml={'2%'} > 
-        <Button 
+      <Box display={'flex'} justifyContent={'start'} ml={'2%'} > 
+        { !isButton ? <Button 
           onClick={onOpen}  
           variant='outline' 
           border={isDark ? "1px solid #333333" : '1px solid #fff'}
           ><HamburgerIcon 
             color={isDark ? "#333333" : '#fff'}
             />
-          </Button>
+          </Button> : <Box w={'100%'}><ButtonLayout title={'देव पूजन'} handleClick={onOpen} buttonIcon={<ArrowForwardIcon/>}/></Box>}
 
         <Drawer placement={'left'} onClose={onClose} isOpen={isOpen} >
           <DrawerOverlay />

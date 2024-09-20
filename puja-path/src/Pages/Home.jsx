@@ -2,12 +2,15 @@ import React from "react";
 import { Box, Button, Text } from '@chakra-ui/react';
 import Styles from "../Styles/CustomStyles.module.css";
 import { HomeAccordions } from "../Components/HomeAccordions";
-import { ArrowForwardIcon } from '@chakra-ui/icons'
+
 import ButtonLayout from "../Layouts/ButtonLayout";
+import { useDisclosure } from '@chakra-ui/react';
+import SideBar from "../Routers/SideBar";
 
 const Home = () => {
+    const { onOpen } = useDisclosure();
     const handleSidebar = () =>{
-
+        onOpen()
     }
     return <>
         <Box className={Styles.homeContainer} pt={'60px'} >
@@ -25,7 +28,8 @@ const Home = () => {
                 variant='outline'>
                 देव पूजन
             </Button> */}
-            <ButtonLayout title={'देव पूजन'} handleClick={handleSidebar} buttonIcon={ArrowForwardIcon}/>
+            <SideBar isButton={true} />
+            {/* <ButtonLayout title={'देव पूजन'} handleClick={handleSidebar} buttonIcon={ArrowForwardIcon}/> */}
         </Box>
             
         <Box className={Styles.homeImageContainer}></Box>

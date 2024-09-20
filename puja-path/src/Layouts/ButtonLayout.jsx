@@ -8,7 +8,7 @@ const ButtonLayout = ({
 }) => {
     return <Button 
                 onClick={handleClick}
-                rightIcon={buttonIcon ? <buttonIcon/> : ''}
+                rightIcon={buttonIcon ? buttonIcon : ''}
                 w={'80%'} colorScheme='gray'
                 variant='outline'>
                 {title}
