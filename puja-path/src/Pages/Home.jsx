@@ -1,35 +1,24 @@
 import React from "react";
-import { Box, Button, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import Styles from "../Styles/CustomStyles.module.css";
-import { HomeAccordions } from "../Components/HomeAccordions";
 
 import ButtonLayout from "../Layouts/ButtonLayout";
-import { useDisclosure } from '@chakra-ui/react';
 import SideBar from "../Routers/SideBar";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-    const { onOpen } = useDisclosure();
-    const handleSidebar = () =>{
-        onOpen()
-    }
+   const navigate = useNavigate()
     return <>
         <Box className={Styles.homeContainer} pt={'60px'} >
 
         <Box className={Styles.homeChildOne}>
-            <br />
-            <br />
-            {/* <Text fontSize='xl' as={'b'} >|| देव पूजन ||</Text> */}
-            <br />
-            <br />
-            {/* <HomeAccordions isHight={true} /> */}
-            {/* <Button 
-                rightIcon={<ArrowForwardIcon />}
-                w={'80%'} colorScheme='gray'
-                variant='outline'>
-                देव पूजन
-            </Button> */}
-            <SideBar isButton={true} />
-            {/* <ButtonLayout title={'देव पूजन'} handleClick={handleSidebar} buttonIcon={ArrowForwardIcon}/> */}
+            <Box mt={'10%'} w={'50%'} justifyContent={'start'}>
+                <SideBar isButton={true} />
+                <div><ButtonLayout title={'कथाएँ'} handleClick={()=>navigate('/katha')}/></div>
+                <div><ButtonLayout title={'आरती'} handleClick={()=>navigate('/arti')}/></div>
+               <div> <ButtonLayout title={'स्तोत्र'} handleClick={()=>navigate('/stuti')}/></div>
+                <div><ButtonLayout title={'पूजन सामग्री'} handleClick={()=>navigate('/pujavidhi')}/></div>
+            </Box>
         </Box>
             
         <Box className={Styles.homeImageContainer}></Box>
@@ -38,4 +27,3 @@ const Home = () => {
 }
 
 export default Home
-

@@ -23,7 +23,7 @@ export const SatnarayanPujanm = () => {
                 })
             }
            
-            <Text fontSize={'md'} color={'blue'} textDecor={'underline'}><Link to={'/katha'}>सत्यनारायण व्रत कथा</Link></Text>
+            <Text fontSize={'md'} color={'blue'} textDecor={'underline'}><Link to={'/katha'}>कथा</Link></Text>
             <br />
             <br />
             <Box w={['100%', '100%', '70%']} ml={['0', '0', '15%']}>
