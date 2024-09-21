@@ -1,25 +1,11 @@
-import { Box,Text, Flex, HStack,Switch } from '@chakra-ui/react';
+import { Box,Text, Flex, HStack } from '@chakra-ui/react';
 import { Link } from "react-router-dom";
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import { ThemeContext } from '../ContextApi/ThemeContext';
-import { ParticleContext } from '../ContextApi/ParticleContext';
-import { CiSun } from "react-icons/ci";
-import { PiMoonLight } from "react-icons/pi";
 import SideBar from './SideBar';
 
 export default function Navbar() {
-  const { changeTheme } = useContext(ThemeContext)
-  const { handleAmoungUs,handleNone } = useContext(ParticleContext)
   const {isDark}=useContext(ThemeContext);
-  const [particleStatus, setParticleStatus]=useState(true);
-
-  const handleChage=()=>{
-    setParticleStatus(!particleStatus)
-  }
-
-  useEffect(()=>{
-    {particleStatus ? handleAmoungUs() : handleNone()}
-  },[particleStatus])
 
   return (
     <>
@@ -35,19 +21,10 @@ export default function Navbar() {
           >
           <HStack spacing={8} alignItems={'center'}>
             <Box><Link to={'/'}><img src={'./om.png'} alt="Om" style={{width:"60px"}} /></Link></Box>
-            <SideBar />
           </HStack>
           <Flex alignItems={'center'} >
-              <Text 
-                fontSize={'4xl'} 
-                color={isDark ? '#333333' : '#fff'} 
-                onClick={changeTheme} 
-                cursor={'pointer'} > 
-                  {isDark ? <PiMoonLight /> : <CiSun /> } 
-                </Text>
+            <SideBar />
             <div style={{ width: "20px" }}></div>
-            
-            <Switch colorScheme={isDark ? 'yellow':'gray'} size='lg' onChange={handleChage} />
           </Flex>
         </Flex>
     </>
