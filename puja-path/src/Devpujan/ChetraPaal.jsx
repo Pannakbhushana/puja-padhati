@@ -17,7 +17,7 @@ export const ChetraPaal = () => {
             ml={['10%', '20%', '25%']} 
             border={['8px solid #5A51BA','12px solid #5A51BA','15px solid #5A51BA']}
          >
-            <img src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/dd3cbb42-65a5-4839-b1e8-08bd01c63e00'} alt="/chetrapal.png" style={{ width: "100%", height: "100%" }} />
+            <img src="/chetrapal.png" alt="क्षेत्रपालपूजनम्" style={{ width: "100%", height: "100%" }} />
         </Box>
 <br />
 <br />

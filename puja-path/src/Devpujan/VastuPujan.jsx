@@ -16,7 +16,7 @@ export const VastuPujan = () => {
             h={['200px', '300px', '500px']} 
             ml={['10%', '20%', '25%']} 
          >
-            <img src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/39eb2fa6-44e6-46c1-853f-0f2db0176aed'} alt="/vastu.png" style={{ width: "100%", height: "100%" }} />
+            <img src="/vastu.png" alt="वास्तुमंडल" style={{ width: "100%", height: "100%" }} />
         </Box>
 <br />
 <br />

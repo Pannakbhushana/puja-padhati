@@ -13,8 +13,8 @@ export const SaptGhritMatrika = () => {
         <br />
         <Box border={'5px solid black'} w={['80%', '60%', '50%']} h={['200px', '300px', '500px']} ml={['10%', '20%', '25%']} >
             <img 
-                src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/84fdfacd-4018-415a-92b7-c78a542adfaf'} 
-                alt="/vasordhara.png" 
+                src="/vasordhara.png"
+                alt="सप्तघृतमातृकापूजनम्" 
                 style={{ width: "100%", height: "100%" }} 
                 />
         </Box>
