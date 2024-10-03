@@ -10,8 +10,8 @@ export const SodashMatrika = () => {
         <br />
         <br />
         <Box  w={['80%', '60%', '50%']} h={['200px', '300px', '500px']} ml={['10%', '20%', '25%']} >
-            <img src={' https://github.com/Pannakbhushana/karm-kand/assets/112654188/1afd3e8a-085c-4130-9b8a-066954159e0f'} 
-            alt="/sodasmatrika.png" 
+            <img src="/sodasmatrika.png"
+            alt="षोडशमातृकापूजनम्" 
             style={{ width: "100%", height: "100%" }}
              />
        

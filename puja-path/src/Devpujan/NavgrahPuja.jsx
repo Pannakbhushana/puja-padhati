@@ -12,7 +12,7 @@ export const NavgrahPuja = () => {
         <br />
         <br />
         <Box  w={['80%','60%','50%']} h={['200px','300px','500px']} ml={['10%','20%','25%']} >
-            <img src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/cd91e39c-6460-4dc4-84de-9ffcd81501a7'} alt="/navgrah.png" style={{width:"100%",height:"100%"}} />
+            <img src='./navgrah.png' alt="नवग्रहपूजनम्" style={{width:"100%",height:"100%"}} />
         </Box>
         <br />
         <br />

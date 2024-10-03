@@ -13,8 +13,8 @@ export const ChausathYogini = () => {
         <br />
         <Box  w={['80%', '60%', '50%']} h={['200px', '300px', '500px']} ml={['10%', '20%', '25%']} >
             <img 
-                src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/04979925-68dd-4e62-8ac0-18eac9e804cd'} 
-                alt="/yogini.png" 
+                src="/yogini.png" 
+                alt="चतुष्षष्टि योगिनीपूजनम्" 
                 style={{ width: "100%", height: "100%" }} 
                 />
         </Box>

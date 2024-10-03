@@ -15,7 +15,7 @@ export const ChaturLingato = () => {
             h={['200px', '300px', '500px']}
             ml={['10%', '20%', '25%']}
         >
-            <img src={'https://github.com/Pannakbhushana/karm-kand/assets/112654188/8445b50e-af33-4211-99ce-3055c1d8ffea'} alt="/chaturlingato.png" style={{ width: "100%", height: "100%" }} />
+            <img src="/chaturlingato.png" alt="चतुर्लिङ्गतोभद्रमंडल" style={{ width: "100%", height: "100%" }} />
         </Box>
         <br />
         <br />
