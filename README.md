@@ -8,7 +8,7 @@ Puja Padhati is a comprehensive web application that brings together a vast coll
  
  
  # Deployed Link
-<a href="www.pujapadhati.com">Go Live</a>
+<a href="www.pujapadhati.com">Puja-Padhati - Go Live</a>
  
  
  # Features :
@@ -52,18 +52,33 @@ Helps users gather the correct materials without missing any essential items.
 Mobile and desktop-friendly for use at home, in temples, or on the go.
 Designed with Tailwind CSS for a clean, responsive layout.
 
-## Homepage :
-![kalptari-home](https://github.com/Pannakbhushana/amezon-clone/assets/112654188/77a14715-4c58-4ea9-a4fd-6adf89f773b9)
+## Home
+![home-pujapadhati](https://github.com/user-attachments/assets/761da93d-78bb-4488-a5f1-9ab1a4a1e6f3)
 
-## Login Page :
-![kalptaru-login](https://github.com/Pannakbhushana/amezon-clone/assets/112654188/f2dee4fe-ef7d-4eaa-b862-3bc0adccf968)
+## Sidebar 
+![sidebar-pujapadhati](https://github.com/user-attachments/assets/7269654e-1244-4afb-bdfe-cdf1808b8bdd)
+
+## Deve-Pujan 
+![devpujan-pujapadhati](https://github.com/user-attachments/assets/3144ae9f-d758-434a-b81e-4b44e198e761)
+
+## Katha
+![katha-pujapadhati](https://github.com/user-attachments/assets/05c60cf0-bdbc-4dac-adb3-1f76416ad166)
+
+## Arti
+![aarti-pujapadhati](https://github.com/user-attachments/assets/f496512a-91cc-4271-b376-c77d5df9dd79)
+
+## Stotras 
+![stotras-pujapadhati](https://github.com/user-attachments/assets/1c220b77-9366-449a-83b0-f20e7949811b)
+
+## Havan-Vidhi 
+![havanvidhi-pujapadhati](https://github.com/user-attachments/assets/7c88f31b-6f22-4fb8-a72f-f9f9b31cc8f1)
+
+## Pujan-Samagri 
+![pujasamagri-pujapadhati](https://github.com/user-attachments/assets/4dbfeea8-4f34-4c03-9bcd-d4f6c172a273)
 
 
-## Cart Page : 
-![kalptaru-cart-page](https://github.com/Pannakbhushana/amezon-clone/assets/112654188/b0fc137e-8fc6-41e7-853e-9c2762fbcff1)
 
-## Single Product Page : 
-![kalptaru-singleProductPage](https://github.com/Pannakbhushana/amezon-clone/assets/112654188/7e836263-de51-44e0-a718-15dabbcfed88)
+
 
 
 
