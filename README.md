@@ -1,30 +1,56 @@
-# KalpTaru Collection.
- Welcome to KalpTaru, an Amazon clone application! This project aims to replicate the core functionalities of Amazon,
-  providing an e-commerce platform where users can browse products, make purchases, and manage their accounts.
+# PUJA PADHATI.
+Puja Padhati is a comprehensive web application that brings together a vast collection of #Mantras, #Pujan_Vidhi, #Aartis, #Stotras, #Havan_Vidhi, #Katha & #Pujan_Samagrih for Hindu rituals and ceremonies. This app aims to simplify the process for Hindu priests and devotees by providing a centralized platform where they can easily access all the essential spiritual content in one place.
 
 # Tech-Stacks Used :
- - HTML 
- - CSS
  - REACT
  - Redux
- - Cyclic
- - Vercel
  - Chakra UI
  
  
  # Deployed Link
-<a href="https://vague-acoustics-7371.vercel.app/">Demo</a>
+<a href="www.pujapadhati.com">Go Live</a>
  
  
  # Features :
  ### UserSide
-- User Authentication and Authorization <br/>
-- Product Browsing and Searching  <br/>
-- Shopping Cart Management  <br/>
-- Order Processing  <br/>
-- User Profile Management  <br/>
-- Responsive Design <br/>
+1. Comprehensive Mantra Collection
+- Access a wide range of mantras for different Hindu gods and rituals.
+Includes mantras for daily worship, special occasions, and festival-specific rituals.
 
+2. Puja Vidhi (Ritual Procedure)
+- Detailed, step-by-step guidance on how to perform various Hindu pujas.
+Includes information on the significance, steps, and required materials for each puja.
+Covers both common and specialized rituals for different gods, festivals, and life events.
+
+3. Aarti Collection
+- A library of aartis (devotional songs) for various deities.
+Available in multiple languages (if applicable), allowing users to sing along during worship.
+Text format for easy reading and following along.
+
+4. Stotras (Prayers)
+- A rich collection of stotras dedicated to different gods and goddesses.
+Suitable for daily recitation or special occasions, organized by deity and purpose.
+Transliterations and translations (if available) to make it easier for all users.
+
+5. Havan Vidhi (Fire Ritual Procedure)
+- A complete guide to performing a Havan (fire ritual) as per Hindu traditions.
+Details the correct method, mantras, and offerings required for a successful havan.
+Covers different types of Havans for various occasions such as Navagraha, Vastu, or wedding havans.
+
+6. Katha (Stories)
+- Mythological stories and religious narratives (Kathas) associated with Hindu gods, festivals, and rituals.
+Includes popular Kathas like Satyanarayan Katha, Shiv Katha, etc.
+Great for devotional reading or storytelling during religious gatherings and pujas.
+
+7. Pujan Samagrih (Material List)
+- A complete list of the materials and items required for performing each puja.
+Organized by the type of ritual or festival, making preparation convenient.
+Helps users gather the correct materials without missing any essential items.
+
+8. User-Friendly Interface
+- Simple and intuitive design for easy navigation.
+Mobile and desktop-friendly for use at home, in temples, or on the go.
+Designed with Tailwind CSS for a clean, responsive layout.
 
 ## Homepage :
 ![kalptari-home](https://github.com/Pannakbhushana/amezon-clone/assets/112654188/77a14715-4c58-4ea9-a4fd-6adf89f773b9)
