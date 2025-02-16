@@ -24,6 +24,10 @@ import Katha from "../Pages/Katha";
 import { RudraBhishek } from "../Devpujan/RudraBhishek";
 import { PujanVidhi } from "../Devpujan/PujanVidhi";
 import Stuti from "../Pages/Stuti";
+import PrivacyPolicy from "../Pages/PrivacyPolicy";
+import TermsAndConditions from "../Pages/TermsAndConditions";
+import RefundPolicy from "../Pages/RefundPolicy";
+import ContactUs from "../Pages/ContactUs";
 
 
 
@@ -33,6 +37,10 @@ const AllRoutes = ()=> {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/arti" element={<Arti/>} />
+                <Route path="/contact-us" element={<ContactUs/>} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+                <Route path="/terms-and-conditions" element={<TermsAndConditions/>} />
+                <Route path="/refund-policy" element={<RefundPolicy/>} />
                 <Route path="/stuti" element={<Stuti/>} />
                 <Route path="/ganesh-pujan" element={<GaneshPuja/>} />
                 <Route path="/about-me" element={<AboutMe/>} />
