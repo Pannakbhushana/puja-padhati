@@ -28,6 +28,7 @@ import PrivacyPolicy from "../Pages/PrivacyPolicy";
 import TermsAndConditions from "../Pages/TermsAndConditions";
 import RefundPolicy from "../Pages/RefundPolicy";
 import ContactUs from "../Pages/ContactUs";
+import AvahanMantras from "../Pages/AvahanMantras";
 
 
 
@@ -37,6 +38,7 @@ const AllRoutes = ()=> {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/arti" element={<Arti/>} />
+                <Route path="/avahan-mantras" element={<AvahanMantras/>} />
                 <Route path="/contact-us" element={<ContactUs/>} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
                 <Route path="/terms-and-conditions" element={<TermsAndConditions/>} />

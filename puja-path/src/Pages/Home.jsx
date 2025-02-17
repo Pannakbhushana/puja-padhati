@@ -15,6 +15,7 @@ const Home = () => {
             <Box mt={'10%'} w={'50%'} justifyContent={'start'}>
                 <SideBar isButton={true} />
                 <div><ButtonLayout title={'कथाएँ'} handleClick={()=>navigate('/katha')}/></div>
+                <div><ButtonLayout title={'ध्यान मंत्र'} handleClick={()=>navigate('/avahan-mantras')}/></div>
                 <div><ButtonLayout title={'आरती'} handleClick={()=>navigate('/arti')}/></div>
                <div> <ButtonLayout title={'स्तोत्र'} handleClick={()=>navigate('/stuti')}/></div>
                 <div><ButtonLayout title={'पूजन सामग्री'} handleClick={()=>navigate('/pujavidhi')}/></div>
