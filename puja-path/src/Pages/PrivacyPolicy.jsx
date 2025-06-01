@@ -3,36 +3,39 @@ import { Box, Container, Heading, Text, VStack } from "@chakra-ui/react";
 
 const PrivacyPolicy = () => {
   return (
-    <Box minH="100vh" display="flex" alignItems="center" justifyContent="center" paddingTop={'10'}>
+    <Box minH="100vh" display="flex" alignItems="center" justifyContent="center" paddingTop="20">
       <Container maxW="4xl" py={8}>
         <VStack spacing={6} align="start">
-        <Box width={'100%'} display="flex" alignItems="center" justifyContent="center">
-          <Heading as="h1" size="lg">Privacy Policy</Heading>
-        </Box>
+          <Box width="100%" display="flex" alignItems="center" justifyContent="center">
+            <Heading as="h1" size="lg">Privacy Policy</Heading>
+          </Box>
           <Box>
             <Text>
-              <span style={{fontStyle:'italic', fontWeight:'bold'}}>Information We Do Not Collect - </span>
-              PujaPadhati is a purely informational platform. We do not collect, store, or process any personal data, such as names, emails, or phone numbers.
+              <span style={{ fontWeight: "bold", fontStyle: "italic" }}>
+                No Personal Data Collection –
+              </span>{" "}
+              PujaPadhati is a purely informational application focused on providing content related to Hindu rituals, such as mantras, slokas, stutis, aartis, and kathas. We do not collect, store, or share any personal information such as your name, email address, phone number, or location.
             </Text>
             <br />
             <Text>
-            <span style={{fontStyle:'italic', fontWeight:'bold'}}>Payment Information - </span>
-              If you choose to make a voluntary donation, the payment will be securely processed through a trusted third-party payment gateway. PujaPadhati does not store or have access to your payment details.
+              <span style={{ fontWeight: "bold", fontStyle: "italic" }}>
+                No Account Required –
+              </span>{" "}
+              PujaPadhati does not require users to sign up or log in. All content is freely accessible without the need for creating an account.
             </Text>
             <br />
             <Text>
-            <span style={{fontStyle:'italic', fontWeight:'bold'}}>Cookies and Tracking - </span>
-              We do not use cookies, tracking scripts, or analytics tools to collect user data.
+              <span style={{ fontWeight: "bold", fontStyle: "italic" }}>
+                Cookies and Tracking –
+              </span>{" "}
+              We do not use cookies, analytics tools, or any form of user tracking in our app.
             </Text>
             <br />
             <Text>
-            <span style={{fontStyle:'italic', fontWeight:'bold'}}>External Links - </span>
-              Our website may contain links to external sites. We are not responsible for the privacy practices of these websites.
-            </Text>
-            <br />
-            <Text>
-            <span style={{fontStyle:'italic', fontWeight:'bold'}}>Changes to This Policy - </span>
-              We may update this Privacy Policy from time to time. Any changes will be posted on this page.
+              <span style={{ fontWeight: "bold", fontStyle: "italic" }}>
+                Changes to This Privacy Policy –
+              </span>{" "}
+              We may update this Privacy Policy occasionally. Any updates will be reflected on this page. Continued use of the app after changes indicates your acceptance of the revised policy.
             </Text>
           </Box>
         </VStack>
