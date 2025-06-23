@@ -8,7 +8,7 @@ Puja Padhati is a comprehensive web application that brings together a vast coll
  
  
  # Deployed Link
-<a href="www.pujapadhati.com">Puja-Padhati - Go Live</a>
+<a href="https://pujapadhati.com/">PujaPadhati - Go Live</a>
  
  
  # Features :
