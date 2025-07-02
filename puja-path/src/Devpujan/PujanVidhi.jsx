@@ -70,25 +70,45 @@ export const PujanVidhi = () => {
     });
   };
 
-  const handleExportPDF = () => {
-    const input = contentRef.current;
-    html2canvas(input).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF({
-        orientation: "portrait",
-        unit: "mm",
-        format: "a4",
-      });
+const handleExportPDF = () => {
+  const input = contentRef.current;
 
-      const imgProps = pdf.getImageProperties(imgData);
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+  // Apply temporary style for PDF capture
+  const originalWidth = input.style.width;
+  const originalTransform = input.style.transform;
+  const originalScale = input.style.scale;
 
-      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-      pdf.save("pujan-samagri.pdf");
+  // Set a fixed width for PDF (like A4 paper width)
+  input.style.width = "794px"; // A4 width in pixels at 96 DPI (≈210mm)
+  input.style.padding = "20px";
+  input.style.transform = "scale(1)";
+  input.style.transformOrigin = "top left";
+
+  html2canvas(input, {
+    scale: 2, // higher scale = better quality
+    useCORS: true,
+    allowTaint: true,
+    backgroundColor: null,
+  }).then((canvas) => {
+    const imgData = canvas.toDataURL("image/png");
+    const pdf = new jsPDF({
+      orientation: "portrait",
+      unit: "mm",
+      format: "a4",
     });
-  };
 
+    const pdfWidth = pdf.internal.pageSize.getWidth();
+    const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+    pdf.save("pujan-samagri.pdf");
+
+    // Restore original styles
+    input.style.width = originalWidth;
+    input.style.transform = originalTransform;
+    input.style.scale = originalScale;
+  });
+};
   return (<Box minH="100vh" pt="80px" px={{ base: 4, md: "10%" }} pb={10}>
     <Box ref={contentRef}>
       <Text fontSize="2xl" fontWeight="bold" mb={8}>
